@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" >
+  <meta name="format-detection" content="telephone=no" >
+  <title>wdui</title>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="css/wdui.css">
+  <link rel="stylesheet" href="site.css">
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="page page-tab">
+    <div class="page-title">
+      搜索框
+      <p>SearchBox</p>
+    </div>
+    <div class="search-box">
+      <div class="search-bar">
+        <div class="search-outer">
+          <div class="search-inner"> <i class="icon-search"></i>
+            <input type="text" class="search-input" autocomplete="off" required="" placeholder="请输入平台简拼或关键字">
+            <a href="javascript:" class="icon-close"></a>
+          </div>
+          <label for="search-input" class="search-text">
+            <i class="icon-search"></i>
+            <span>请输入平台简拼或关键字</span>
+          </label>
+        </div>
+        <a href="javascript:" class="search-cancel">取消</a>
+      </div>
+      <div class="search-land"></div>
+    </div>
+  </div>
+  <script src="prism.js"></script>
+  <script src="app.js"></script>
+  <script>
+  $('.search-text').on('click', function () {
+    $('.search-input').focus();
+    $('.search-bar').addClass('search-focusing');
+  });
+
+  $('.search-cancel').on('click', function () {
+    $('.search-input').blur();
+    $('.search-bar').removeClass('search-focusing');
+  })
+  </script>
+</body>
+</html>

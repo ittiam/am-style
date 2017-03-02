@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" >
+  <meta name="format-detection" content="telephone=no" >
+  <title>wdui</title>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="css/wdui.css">
+  <link rel="stylesheet" href="site.css">
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body style="background: #f7f8f8;">
+  <div class="page home">
+    <div class="page-content">
+      <!-- 表单 -->
+      <div class="list category-closed">
+        <div class="list-header">
+          <div class="demo-category">
+            <div class="demo-category-name">表单</div>
+            <div class="demo-category-arrow">
+              <i class="icon-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="list-body">
+          <a href="button.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Button 按钮</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="textbox.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Textbox 文本输入</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="searchbox.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">SearchBox 搜索框</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="spinner.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Spinner 加载</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- 导航相关 -->
+      <div class="list category-closed">
+        <div class="list-header">
+          <div class="demo-category">
+            <div class="demo-category-name">导航相关</div>
+            <div class="demo-category-arrow">
+              <i class="icon-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="list-body">
+          <a class="cell" href="tab.html">
+            <div class="cell-content">
+              <div class="cell-title">Tab 标签页</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- 操作反馈 -->
+      <div class="list category-closed">
+        <div class="list-header">
+          <div class="demo-category">
+            <div class="demo-category-name">操作反馈</div>
+            <div class="demo-category-arrow">
+              <i class="icon-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="list-body">
+          <a href="actionsheet.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">ActionSheet 动作面板</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="modal.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Modal 对话框</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="toast.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Toast 轻提示</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="indicator.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Indicator 加载</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- 数据展示 -->
+      <div class="list category-closed">
+        <div class="list-header">
+          <div class="demo-category">
+            <div class="demo-category-name">数据展示</div>
+            <div class="demo-category-arrow">
+              <i class="icon-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="list-body">
+          <a href="list.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">List 列表</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="media.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Media 图文列表</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="step.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Step 步骤条</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="badge.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Badge 徽标数</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="card.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Card 卡片</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+          <a href="grid.html" class="cell">
+            <div class="cell-content">
+              <div class="cell-title">Grid 九宫格</div>
+            </div>
+            <i class="icon-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="prism.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $('.list-header').on('click', function () {
+      var $this = $(this);
+      var $list = $this.parents('.list');
+
+      if ($list.hasClass('category-closed')) {
+        $list.removeClass('category-closed').addClass('category-open');
+      } else if ($list.hasClass('category-open')) {
+        $list.removeClass('category-open').addClass('category-closed');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" >
+  <meta name="format-detection" content="telephone=no" >
+  <title>wdui</title>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="css/wdui.css">
+  <link rel="stylesheet" href="site.css">
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="page page-toast" style="margin: 15px;">
+    <div class="page-title">
+      加载
+      <p>Indicator</p>
+    </div>
+    <button class="btn" id="js-toast-1">显示 Indicator</button>
+    <div class="divide"></div>
+    <button class="btn" id="js-toast-2">显示带文字 Indicator</button>
+  </div>
+  <div class="toast" style="display: none;" id="toast-1">
+    <div class="indicator-wrapper">
+      <span class="indicator-spin">
+        <div class="spinner-snake" style="border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); height: 32px; width: 32px;"></div>
+      </span>
+    </div>
+    <div class="toast-mask"></div>
+  </div>
+  <div class="toast" style="display: none;" id="toast-2">
+    <div class="indicator-wrapper">
+      <span class="indicator-spin">
+        <div class="spinner-snake" style="border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); height: 32px; width: 32px;"></div>
+      </span>
+      <span class="indicator-text">加载中...</span>
+    </div>
+    <div class="toast-mask"></div>
+  </div>
+  <script src="prism.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $('#js-toast-1').on('click', function (e) {
+      $('#toast-1').show();
+
+      setTimeout(function () {
+        $('#toast-1').hide();
+      }, 3000);
+    });
+
+    $('#js-toast-2').on('click', function (e) {
+      $('#toast-2').show();
+
+      setTimeout(function () {
+        $('#toast-2').hide();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
