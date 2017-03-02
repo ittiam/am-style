@@ -2,9 +2,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" >
   <meta name="format-detection" content="telephone=no" >
-  <title>wdui</title>
+  <title>Am Style</title>
   <link rel="stylesheet" href="prism.css">
-  <link rel="stylesheet" href="css/wdui.css">
+  <link rel="stylesheet" href="css/am-style.css">
   <link rel="stylesheet" href="site.css">
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 </head>
