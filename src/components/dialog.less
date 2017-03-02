@@ -27,6 +27,7 @@
     transform: translate(-50%, -50%);
     z-index: @modalZIndex;
     width: 256px;
+    transform-origin: 0 0;
 
     &.@{modalPrefixClass}--hidden {
       transition: all .2s;
@@ -39,6 +40,11 @@
       opacity: 1;
       visibility: visible;
       transform: scale(1) translate(-50%,-50%);
+    }
+
+    &.ease-fade-enter,
+    &.ease-fade-leave-to {
+      transform: scale(0.9) translate(-50%,-50%);
     }
   }
 
