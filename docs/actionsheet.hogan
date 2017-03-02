@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-toast" style="margin: 15px;">
+    <div class="page-title">
+      动作面板
+      <p>ActionSheet</p>
+    </div>
+    <button class="btn" id="js-actionsheet">显示 ActionSheet</button>
+    <div class="actionsheet">
+      <div class="actionsheet-mask mask-hook"></div>
+      <div class="actionsheet-panel panel-hook">
+        <div class="actionsheet-menu">
+          <div class="actionsheet-cell" data-key="1">操作一</div>
+          <div class="actionsheet-cell" data-key="2">操作二</div>
+          <div class="actionsheet-cell" data-key="3">操作三</div>
+        </div>
+        <div class="actionsheet-action">
+          <div class="actionsheet-cell actionsheet-cancel">取消</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+  <script>
+    var $elem = $('.actionsheet');
+    var $mask = $('.actionsheet-mask');
+    var $panel = $('.actionsheet-panel');
+    var showCls = 'show';
+
+    function showActionSheet () {
+      $elem.show();
+
+      setTimeout(function() {
+        $mask.addClass(showCls);
+        $panel.addClass(showCls);
+      }, 0);
+    }
+
+    function hideActionSheet () {
+      $mask.removeClass(showCls);
+      $panel.removeClass(showCls);
+
+      setTimeout(function () {
+       $elem.hide();
+      }, 500);
+    }
+
+    $('#js-actionsheet').on('click', function () {
+      showActionSheet();
+    });
+
+    $('.actionsheet-cancel').on('click', function () {
+      hideActionSheet();
+    });
+
+    $mask.on('click', function () {
+      hideActionSheet();
+    });
+  </script>
+</body>
+</html>

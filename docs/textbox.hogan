@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-textbox" style="margin: 15px;">
+    <div class="page-title">
+      文本输入
+      <p>Textbox</p>
+    </div>
+
+    <div>
+      <h2>垂直</h2>
+      <div class="divide"></div>
+      <div class="textbox has-label vertical">
+        <div class="textbox-content">
+          <label class="textbox-label">
+            <div class="textbox-label-text">Name</div>
+            <input type="text" placeholder="Enter your name" class="textbox-input">
+          </label>
+        </div>
+        <div class="textbox-right">
+          <button type="button" class="btn btn-primary" style="margin-left: 10px; width: 70px; height: 32px; line-height: 32px;">按钮</button>
+        </div>
+      </div>
+      <div class="divide"></div>
+      <div class="textbox has-label vertical">
+        <div class="textbox-content">
+          <label class="textbox-label">
+            <div class="textbox-label-text">Short bio</div>
+            <textarea placeholder="Introduce yourself in a few words" rows="2" class="textbox-textarea"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="divide"></div>
+      <h2>水平</h2>
+      <div class="textbox has-label">
+        <div class="textbox-icon-wrapper">
+          <i class="textbox-icon icon icon-persion" style="font-size: 24px;"></i>
+        </div>
+        <div class="textbox-content">
+          <label class="textbox-label">
+            <div class="textbox-label-text">Name</div>
+            <input type="text" placeholder="Enter your name" class="textbox-input">
+          </label>
+        </div>
+      </div>
+      <div class="divide"></div>
+      <div class="textbox has-label">
+        <div class="textbox-icon-wrapper">
+          <i class="textbox-icon icon icon-face" style="font-size: 24px;"></i>
+        </div>
+        <div class="textbox-content">
+          <label class="textbox-label">
+            <div class="textbox-label-text">Short bio</div>
+            <textarea placeholder="Introduce yourself in a few words" rows="3" class="textbox-textarea"></textarea>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

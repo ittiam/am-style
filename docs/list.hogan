@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-list" style="margin: 15px;">
+    <div class="page-title">
+      列表
+      <p>Cell</p>
+    </div>
+    <div class="list">
+      <a class="cell">
+        <div class="cell-content">
+          <div class="cell-title">标题文字</div>
+        </div>
+      </a>
+      <a class="cell cell-with-brief">
+        <div class="cell-content">
+        <div class="cell-title">
+          标题文字<div class="cell-brief">辅助文字</div>
+        </div>
+        </div>
+      </a>
+      <a class="cell">
+        <div class="cell-content">
+          <div class="cell-title">标题文字</div>
+        </div>
+        <div class="cell-right">说明文字</div>
+      </a>
+      <a class="cell">
+        <div class="cell-content">
+          <div class="cell-title">Google</div>
+        </div>
+        <div class="cell-right">带链接</div>
+        <i class="icon-right"></i>
+      </a>
+      <a class="cell">
+        <div class="cell-content">
+          <div class="cell-title">标题文字</div>
+        </div>
+        <div class="cell-right">
+          <button type="button" class="btn btn-primary btn-small">按钮</button>
+        </div>
+      </a>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

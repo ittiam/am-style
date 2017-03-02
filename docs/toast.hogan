@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-toast" style="margin: 15px;">
+    <div class="page-title">
+      轻提示
+      <p>Toast</p>
+    </div>
+    <button class="btn" id="js-toast">显示 Toast</button>
+  </div>
+  <div class="toast" style="display: none;">
+    <div class="toast-wrapper">
+      <div class="toast-notice toast-info">
+        <div class="toast-text">数据出错!</div>
+      </div>
+    </div>
+    <div class="toast-mask"></div>
+  </div>
+  {{> partials/after-footer}}
+  <script>
+    $('#js-toast').on('click', function (e) {
+      $('.toast').show();
+
+      setTimeout(function () {
+        $('.toast').hide();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

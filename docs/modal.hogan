@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-toast" style="margin: 15px;">
+    <div class="page-title">
+      提示框
+      <p>Modal</p>
+    </div>
+    <button class="btn" id="js-alert">打开 alert 提示框</button>
+    <div class="divide"></div>
+    <button class="btn" id="js-confirm">打开 confirm 提示框</button>
+    <div class="divide"></div>
+    <button class="btn" id="js-closable">打开可关闭提示框</button>
+    <div class="divide"></div>
+    <button class="btn" id="js-multi">弹出多个按钮</button>
+  </div>
+  <!-- alert -->
+  <div class="modal" style="display: none;" id="alert">
+    <div class="modal-mask"></div>
+    <div class="modal-wrapper modal-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">标题文字标题文字</div>
+        </div>
+        <div class="modal-body">辅助文字辅助文字</div>
+        <div class="modal-footer">
+          <div class="modal-button-group-h">
+            <a class="modal-button">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- confirm -->
+  <div class="modal" style="display: none;" id="confirm">
+    <div class="modal-mask"></div>
+    <div class="modal-wrapper modal-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">标题文字标题文字</div>
+        </div>
+        <div class="modal-body">辅助文字辅助文字</div>
+        <div class="modal-footer">
+          <div class="modal-button-group-h">
+            <a class="modal-button">取消</a>
+            <a class="modal-button">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 可关闭 -->
+  <div class="modal" style="display: none;" id="closable">
+    <div class="modal-mask"></div>
+    <div class="modal-wrapper modal-transparent">
+      <div class="modal-content">
+        <button aria-label="Close" class="modal-close"><span class="modal-close-x"></span></button>
+        <div class="modal-header">
+          <div class="modal-title">标题文字标题文字</div>
+        </div>
+        <div class="modal-body">辅助文字辅助文字</div>
+      </div>
+    </div>
+  </div>
+  <!-- 多个 -->
+  <div class="modal" style="display: none;" id="multi">
+    <div class="modal-mask"></div>
+    <div class="modal-wrapper modal-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">标题文字标题文字</div>
+        </div>
+        <div class="modal-body">辅助文字辅助文字</div>
+        <div class="modal-footer">
+          <div class="modal-button-group-v">
+            <a class="modal-button">按钮一</a>
+            <a class="modal-button">按钮二</a>
+            <a class="modal-button">按钮三</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+  <script>
+  $('#js-alert').on('click', function () {
+    $('#alert').show();
+  });
+  $('#js-confirm').on('click', function () {
+    $('#confirm').show();
+  });
+  $('#js-closable').on('click', function () {
+    $('#closable').show();
+  });
+  $('#js-multi').on('click', function () {
+    $('#multi').show();
+  });
+  $('.modal-button, .modal-close').on('click', function () {
+    $('.modal').hide();
+  })
+  </script>
+</body>
+</html>

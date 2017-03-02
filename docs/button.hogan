@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-button" style="margin: 15px;">
+    <div class="page-title">
+      按钮
+      <p>Button</p>
+    </div>
+    <button type="button" class="btn">default 按钮</button>
+    <div class="divide"></div>
+    <button type="button" disabled="disabled" class="btn btn-disabled">default disabled 按钮</button>
+    <div class="divide"></div>
+    <button type="button" class="btn btn-primary">primary 按钮</button>
+    <div class="divide"></div>
+    <button type="button" class="btn btn-ghost">ghost 按钮</button>
+    <div class="divide"></div>
+    <button type="button" class="btn btn-primary btn-loading btn-block">
+      <i class="icon icon-loading"></i>  primary loading 按钮
+    </button>
+    <div class="divide"></div>
+    <button type="button" class="btn btn-primary btn-small btn-inline">primary small 按钮</button>
+    <button type="button" class="btn btn-ghost btn-small btn-inline">ghost small 按钮</button>
+    <div class="divide"></div>
+    <button type="button" class="btn btn-ghost btn-large btn-inline">ghost large 按钮</button>
+    <div class="divide"></div>
+    <div class="btn-group">
+      <button class="btn btn-ghost">Left</button>
+      <button class="btn btn-ghost">Middle</button>
+      <button class="btn btn-ghost">Right</button>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

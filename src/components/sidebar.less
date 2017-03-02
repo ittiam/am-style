@@ -1,0 +1,36 @@
+@sidebarWidth: 260px;
+
+.sidebar-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  opacity: 0;
+  z-index: @popoverZIndex;
+  display: none;
+}
+
+.sidebar {
+  z-index: @panelZIndex;
+  display: none;
+  background: #111;
+  box-sizing: border-box;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  width: @sidebarWidth;
+  top: 0;
+  height: 100%;
+  transform: translate3d(0,0,0);
+  transition-duration: .4s;
+
+  &.sidebar-left {
+
+  }
+
+  &.sidebar-right {
+
+  }
+}

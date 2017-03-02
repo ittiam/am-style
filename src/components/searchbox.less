@@ -1,0 +1,126 @@
+@searchboxHeight: 1.4rem;
+
+.search-box {
+  &.search-fixed {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: @suggestZIndex;
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .search-bar {
+    position: relative;
+    padding: 0.5rem .75rem;
+    display: flex;
+    background-color: @brand-primary;
+    z-index: 1;
+
+    &.search-focusing {
+      .search-cancel {
+        display: block;
+      }
+
+      .search-text {
+        display: none;
+      }
+    }
+  }
+
+  .search-outer {
+    position: relative;
+    flex: auto;
+    background-color: @brand-primary;
+  }
+
+  .search-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-inner {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: @radius-sm;
+
+    .icon-search {
+      position: absolute;
+      left: 0.2rem;
+      top: 0;
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+
+    .search-input {
+      padding: 0.3rem 0;
+      width: 100%;
+      height: @searchboxHeight;
+      border: 0;
+      font-size: .7rem;
+      line-height: 1rem;
+      background: transparent;
+
+      &:not(:valid)~.icon-close {
+        display: none;
+      }
+
+      .icon-search {
+        line-height: @searchboxHeight;
+      }
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 0.5rem;
+      line-height: @searchboxHeight;
+    }
+  }
+
+  .search-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: @radius-sm;
+    text-align: center;
+    color: #9b9b9b;
+    background: #fff;
+
+    .icon-search {
+      font-size: .8rem;
+      vertical-align: middle;
+      line-height: @searchboxHeight;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 0.7rem;
+      vertical-align: middle;
+      line-height: @searchboxHeight;
+    }
+  }
+
+  .search-cancel {
+    display: none;
+    margin-left: .5rem;
+    line-height: @searchboxHeight;
+    white-space: nowrap;
+    color: @color-text-base;
+  }
+}

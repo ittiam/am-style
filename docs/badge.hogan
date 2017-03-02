@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-list" style="margin: 15px;">
+    <div class="page-title">
+      徽标数
+      <p>Badge</p>
+    </div>
+    <div class="list">
+      <div class="cell">
+        <div class="cell-left">
+          <div style="position: relative; margin-right: 10px;">
+            <div class="avatarholder" style="width: 30px;height: 30px;line-height: 30px;font-size: .6rem;">w</div>
+            <span class="badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
+          </div>
+        </div>
+        <div class="cell-content">
+          <div class="cell-title">小圆点</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <div class="cell-title">小圆点</div>
+        </div>
+        <div class="cell-right">详细信息<span class="badge badge-dot" style="margin-left: 5px;"></span>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <div class="cell-title">小圆点 <span class="badge" style="margin-left: 5px;">8</span></div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <div class="cell-title">小圆点 <span class="badge" style="margin-left: 5px;">New</span></div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <div class="cell-title">小圆点 <span class="badge" style="margin-left: 5px;">Hot</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

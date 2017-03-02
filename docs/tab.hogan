@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-tab">
+    <div class="page-title">
+      标签
+      <p>Tab</p>
+    </div>
+    <div class="tabs tabs-type-text fullwidth">
+      <div class="tabs-header">
+        <ul class="tabs-header-items">
+          <li class="tab-header-item type-text active">
+            <div class="tab-header-item-text">Books</div>
+          </li>
+          <li class="tab-header-item type-text">
+            <div class="tab-header-item-text">Authors</div>
+          </li>
+          <li class="tab-header-item type-text">
+            <div class="tab-header-item-text">Collections</div>
+          </li>
+          <li class="tab-header-item type-text">
+            <div class="tab-header-item-text">Favourites</div>
+          </li>
+        </ul>
+        <div class="tabs-active-tab-indicator"></div>
+      </div>
+      <div class="tabs-body">
+        <div class="tab-panel active">
+          My books
+          <a href="https://google.com" target="_blank" rel="noopener">Hey</a></div>
+        <div class="tab-panel">
+          Authors
+        </div>
+        <div class="tab-panel">
+          My collections
+        </div>
+        <div class="tab-panel">
+          My favourites
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

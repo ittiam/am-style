@@ -1,0 +1,28 @@
+{
+  "name": "Am-Style",
+  "version": "0.0.1",
+  "description": "A Mobile UI",
+  "main": "dist/am-style.css",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
+    "gh": "npm run build && gh-pages -d demo"
+  },
+  "author": "czh <ittiam@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "gh-pages": "^0.12.0",
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.8",
+    "gulp-hogan": "^2.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^2.4.1"
+  }
+}

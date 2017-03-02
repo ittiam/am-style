@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{> partials/head}}
+<body>
+  <div class="page page-tab" style="margin: 0 15px;">
+    <div class="page-title">
+      图文列表
+      <p>Media</p>
+    </div>
+    <!-- left align -->
+    <div class="media">
+      <div class="media-left">
+        <div class="avatarholder">w</div>
+      </div>
+      <div class="media-body">
+        <div class="media-heading">WDUI</div>
+        <div class="media-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.</div>
+      </div>
+    </div>
+
+    <!-- right align -->
+    <div class="media">
+      <div class="media-body">
+        <div class="media-heading">WDUI</div>
+        <div class="media-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vel, voluptates, doloremque nesciunt illum est corrupti nostrum expedita adipisci dicta vitae? Eveniet maxime quibusdam modi molestias alias et incidunt est.</div>
+      </div>
+      <div class="media-right">
+        <div class="avatarholder">w</div>
+      </div>
+    </div>
+  </div>
+  {{> partials/after-footer}}
+</body>
+</html>

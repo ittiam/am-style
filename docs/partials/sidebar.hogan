@@ -1,0 +1,4 @@
+<div class="sidebar-overlay"></div>
+<aside class="sidebar" role="navigation">
+  <div class="inner"></div>
+</aside>
