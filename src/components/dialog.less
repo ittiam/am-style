@@ -24,27 +24,21 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     z-index: @modalZIndex;
     width: 256px;
     transform-origin: 0 0;
 
-    &.@{modalPrefixClass}--hidden {
+    .@{modalPrefixClass}--hidden {
       transition: all .2s;
       opacity: 0;
-      transform: scale(.9) translate(-50%,-50%);
-      transform-origin: 0 0;
+      transform: scale(.9);
     }
 
-    &.@{modalPrefixClass}--visible {
+    .@{modalPrefixClass}--visible {
       opacity: 1;
       visibility: visible;
-      transform: scale(1) translate(-50%,-50%);
-    }
-
-    &.ease-fade-enter,
-    &.ease-fade-leave-to {
-      transform: scale(0.9) translate(-50%,-50%);
+      transform: scale(1);
     }
   }
 
